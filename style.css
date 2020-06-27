@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@600&display=swap');
+
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+/* main-nav */
+nav{
+    width: 100%;
+}
+
+#main-nav{
+    position: relative;
+    height: 85px;
+    /* background-color: blanchedalmond; */
+}
+
+.logo{
+    position: absolute;
+    padding: 0 20px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.search-bar{
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    height: 38px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+#search-btn{
+    background-color: whitesmoke;
+    border: hidden;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#search-field{
+    background-color: whitesmoke;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(224, 205, 186, 0);
+    border: hidden;
+    border-radius: 25px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* --main-nav-- */
+
+/* sec-nav */
+#sec-nav{
+    height: 50px;
+    /* background-color: blanchedalmond; */
+}
+
+#nav-link{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.links{
+    padding: 10px 0;
+    list-style: none;
+    font-size: 20px;
+    color: rgba(70, 66, 66, 0.856);
+    transition: all 0.3s ease 0;
+    cursor: pointer;
+}
+
+.links:hover{
+    color: black;
+}
+
+/* --sec-nav-- */
+
+/* --header-- */
+
+
+/* banner */
+#banner{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://w.wallhaven.cc/full/lm/wallhaven-lm16g2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: tomato; */
+}
+
+.intro-text{
+    position: absolute;
+    bottom: 55%;
+    right: 50%;
+    font-size: 2em;
+}
+
+.banner-search-bar{
+    position: absolute;
+    bottom: 45%;
+    right: 13.4%;
+    width: 70%;
+    height: 50px;
+    background-color: white;
+    border-radius: 35px;
+}
+
+.banner-search-bar input[type='search']{
+    width: 100%;
+    font-size: 17px;
+    padding: 20px 10px;
+    border: none;
+}
+/* --banner-- */
+
+/* gallery */
+.title{
+    width: 100%;
+    height: 150px;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.gallery{
+    padding: 0 0;
+}
+/* --gallery-- */
+
+
+/* footer start */
+footer{
+    display: flex;
+}
+
+#about{
+    float: left;
+    width: 20%;
+    height: 300px;
+    /* border: black SOLID 1px; */
+    text-align: justify;
+    /* margin: 10px; */
+    padding: 30px;
+}
+
+#about h2{
+    text-align: center;
+    color: rgba(41, 38, 38, 0.835);
+    padding-bottom: 30px;
+
+}
+
+#contact{
+    float: left;
+    width: 20%;
+    height: 300px;
+    /* border: black SOLID 1px; */
+    /* margin: 20px; */
+    text-align: justify;
+    padding: 30px;
+
+}
+
+#contact h2{
+    text-align: center;
+    color: rgba(41, 38, 38, 0.835);
+    padding-bottom: 30px;
+}
+
+#subscribe{
+    float: left;
+    width: 60%;
+    height: 300px;
+    /* border: black SOLID 1px; */
+    /* margin: 20px; */
+    text-align: justify;
+    padding-top: 30px;
+
+}
+
+#subscribe h2{
+    text-align: center;
+    color: rgba(41, 38, 38, 0.835);
+}
+
+#subscribe p{
+    font-size: 14px;
+    text-align: center;
+}
+
+#sub-form input[type=text]{
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    width: 43%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+#sub-form input[type=email]{
+    width: 55%;
+    float: left;
+    margin-left: 25px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+#sub-form input[type=submit]{
+    margin-left: 25px;
+    width: 31%;
+    height: 34px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(223, 35, 35);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 4px;
+}
+
+#sub-form input[type=submit]:hover{
+    background: #EB5757;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#logo-end{
+    width: 100%;
+    font-family: DeerUp Shouttap;
+    color: black;
+    font-size: 80px;
+    text-align: center;
+}
+/* footer ends */
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
+.view-all{
+    display: none;
+    margin: 20px 20px;
+    font-size: 1.5em;
+}
